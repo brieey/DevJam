@@ -1,0 +1,9 @@
+.aboutbg{
+    background-color: red;
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    background-size: 200% 200%;
+/*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+}

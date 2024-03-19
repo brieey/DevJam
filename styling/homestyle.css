@@ -1,0 +1,104 @@
+/*Creates the animated ombre background with chosen colors and how fast they should "ombre"*/
+.homebg {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 200% 200%;
+    background-image: linear-gradient(-45deg, #d11df4 0%, #ef3c99 25%, #f87e4f 51%, #f9bb18 100%);
+    -webkit-animation: AnimateBG 5s ease infinite;
+            animation: AnimateBG 5s ease infinite;
+    
+}
+
+@-webkit-keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+  @keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.homecontainer img {
+    max-width: 1100px; /*default 905 px*/
+    position: relative;
+    border-radius: 20px;
+}
+
+/*Position the text on the home container image*/
+.overlay-text {
+    position: absolute;
+    top: 50%; 
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+    color: #fff; 
+    padding: 10px 20px; 
+    font-size: 20px; 
+    text-align: center;
+}
+
+svg {
+    display: flex;
+    font: 10.5em 'Montserrat';
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+/*Styles the colors on the DevJam moving logo*/
+.text-copy:nth-child(1){
+    stroke: #ef3c99;
+    animation-delay: -1;
+}
+  
+.text-copy:nth-child(2){
+    stroke: #f87e4f;
+    animation-delay: -2s;
+}
+  
+.text-copy:nth-child(3){
+    stroke: #37bafb;
+    animation-delay: -3s;
+}
+  
+.text-copy:nth-child(4){
+    stroke: #f9bb18;
+    animation-delay: -4s;
+}
+  
+.text-copy:nth-child(5){
+    stroke: #d11df4;
+    animation-delay: -5s;
+}
+  
+@keyframes stroke-offset{
+    100% {stroke-dashoffset: -35%;}
+}
+
+
+

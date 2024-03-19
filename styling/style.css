@@ -1,0 +1,53 @@
+/*Styles the body*/
+body {
+    margin: 0;
+}
+
+
+/*Styles the nav bar as a whole*/
+nav {
+    background: #ffc9ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 1.5rem;
+    box-shadow: 2px 3px 2px #de33ae; 
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 60px;
+  }
+
+  ul {
+    list-style: none; /*Removes bullet points*/
+    display: flex; /*Displays the list items in a row*/
+    text-align: right; /*Aligns the text to the right*/
+  }
+  
+  li {
+    margin: 0 10px;
+  }
+  
+  /* Style the tab buttons colors */
+  li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+ 
+  li a:hover {
+    color: #d11df4; /* Change the link color on hover on tab items */
+  }
+  
+
+  .nav-item {
+    margin-left: 2rem;
+  }
+  
+  .nav-link {
+    font-weight: var(--bold-font);
+  }
+
